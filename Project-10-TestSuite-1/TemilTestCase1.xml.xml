@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e73b64fe-5fe9-4198-970e-99c577d58b69" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TemilTestCase1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e73b64fe-5fe9-4198-970e-99c577d58b69fileName">TemilTestCase1.xml</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="POST Request" id="b7f3be2a-44fc-4b44-8011-3bbd24c5a296">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="POST Request" id="c03a562a-14cc-4160-81f3-dfc1492dccda" mediaType="application/json" postQueryString="false">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="64c55d2b-de20-4bf1-b967-2285f8f89e3a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SwaggerComplianceAssertion" id="2eee57d7-12cc-45c6-b615-307d1fe8e234" name="Swagger Compliance Assertion">
+          <con:configuration>
+            <swaggerUrl>https://petstore.swagger.io/v2/swagger.json</swaggerUrl>
+            <strictMode>true</strictMode>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="79de90fd-9b91-48ac-9936-172d2e760926" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="TemilsProject" id="74334797-b887-41b7-a02b-234046206aed">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="TemilsProject" id="c03a562a-14cc-4160-81f3-dfc1492dccda" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="e18b03b2-7c2b-4beb-add3-4d06fe6d7496" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="8844ea39-2523-470f-92c8-73919450e3fe" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
