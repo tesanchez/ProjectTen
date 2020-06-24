@@ -36,10 +36,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="ProjectTenTest" id="74334797-b887-41b7-a02b-234046206aed">
+  <con:testStep type="restrequest" name="TemilsProject" id="74334797-b887-41b7-a02b-234046206aed">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="ProjectTenTest" id="c03a562a-14cc-4160-81f3-dfc1492dccda" mediaType="application/json">
+      <con:restRequest name="TemilsProject" id="c03a562a-14cc-4160-81f3-dfc1492dccda" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://petstore.swagger.io</con:endpoint>
         <con:request/>

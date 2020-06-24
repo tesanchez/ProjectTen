@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet" path="/pet" id="32fcc992-6a82-4716-a539-16990411215c" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/pet" path="/pet" id="32fcc992-6a82-4716-a539-16990411215c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="32fcc992-6a82-4716-a539-16990411215cfileName">%2Fpet</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="2d81b31d-2677-4027-b1ef-612d6cc5aea7" mediaType="application/xml">
@@ -80,6 +84,10 @@
    </tagss>\r
    <status>available</status>\r
 </Pet>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -156,6 +164,10 @@
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="a124dd1a-56e8-477f-ae14-15fab46edfaf" mediaType="application/xml">
@@ -179,6 +191,10 @@
    </tagss>\r
    <status>available</status>\r
 </Pet>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
