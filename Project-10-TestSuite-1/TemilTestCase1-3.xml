@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testCase id="e73b64fe-5fe9-4198-970e-99c577d58b69" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TemilTestCase1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="e73b64fe-5fe9-4198-970e-99c577d58b69fileName">TemilTestCase1-2.xml</con:setting>
+    <con:setting id="e73b64fe-5fe9-4198-970e-99c577d58b69fileName">TemilTestCase1-3.xml</con:setting>
   </con:settings>
   <con:testStep type="restrequest" name="POST Request" id="b7f3be2a-44fc-4b44-8011-3bbd24c5a296">
     <con:settings/>
