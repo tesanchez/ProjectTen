@@ -36,6 +36,32 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="restrequest" name="ProjectTenTest" id="74334797-b887-41b7-a02b-234046206aed">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="ProjectTenTest" id="c03a562a-14cc-4160-81f3-dfc1492dccda" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="e18b03b2-7c2b-4beb-add3-4d06fe6d7496" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="8844ea39-2523-470f-92c8-73919450e3fe" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
 </con:testCase>
